@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    tools:context=".reading.ReadingActivity">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="InvalidId"
+        tools:layout_editor_absoluteX="3dp">
+
+        <TextView
+            android:id="@+id/tv_R"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/fredokaoneregular"
+            android:text="R"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/tv_E"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/fredokaoneregular"
+            android:text="E"
+            android:textColor="@color/colorBlue"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/tv_A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/fredokaoneregular"
+            android:text="A"
+            android:textColor="@color/darkOrange"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/tv_D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/fredokaoneregular"
+            android:text="D"
+            android:textColor="@color/colorAccent"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/tv_i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/fredokaoneregular"
+            android:text="I"
+            android:textColor="@color/cPrimary"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/tv_n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/fredokaoneregular"
+            android:text="N"
+            android:textColor="@color/colorPurple2"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/tv_g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/fredokaoneregular"
+            android:text="G"
+            android:textColor="@color/colorAccent2"
+            android:textSize="50dp" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/list_reading"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@id/linear"
+        android:layout_height="wrap_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

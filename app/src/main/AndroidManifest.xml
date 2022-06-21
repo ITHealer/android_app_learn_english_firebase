@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.toeicexamapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Healer"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ToeicExamApplication">
+        <activity
+            android:name=".reading.activity_Congra_Reading"
+            android:exported="false" />
+        <activity
+            android:name=".listening.Congra_listen"
+            android:exported="false" />
+        <activity
+            android:name=".vocabulary.activity_list_word"
+            android:exported="false"
+            android:label="List word"
+            android:parentActivityName=".vocabulary.VocabularyActivity" />
+        <activity
+            android:name=".grammar.Grammar_List"
+            android:exported="false"
+            android:label="Ngữ pháp"
+            android:parentActivityName=".grammar.GrammarActivity" />
+        <activity
+            android:name=".listening.Listening_Quiz"
+            android:exported="false"
+            android:label="Listening"
+            android:parentActivityName=".listening.ListeningActivity" />
+        <activity
+            android:name=".vocabulary.activity_vocabulary_words"
+            android:exported="false"
+            android:label="Words"
+            android:parentActivityName=".vocabulary.VocabularyActivity" />
+        <activity
+            android:name=".reading.activity_reading_answers"
+            android:exported="false"
+            android:label="Answers"
+            android:parentActivityName=".reading.ReadingActivity" />
+        <activity
+            android:name=".account.MyProfileActivity"
+            android:exported="false"
+            android:label="@string/menu_my_profile" />
+        <activity
+            android:name=".reading.ReadingActivity"
+            android:exported="false"
+            android:label="Reading"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".grammar.GrammarActivity"
+            android:exported="false"
+            android:label="@string/menu_grammar"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".listening.ListeningActivity"
+            android:exported="false"
+            android:label="Listening"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".vocabulary.VocabularyActivity"
+            android:exported="false"
+            android:label="Vocabulary"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".account.RankingActivity"
+            android:exported="false"
+            android:label="Xếp hạng"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".account.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".account.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".account.SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".account.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/home"
+            android:theme="@style/Theme.ToeicExamApplication.NoActionBar" />
+    </application>
+
+</manifest>

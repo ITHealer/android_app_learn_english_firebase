@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_setting"
+            android:title="@string/menu_setting" />
+    </group>
+
+    <item android:title="Học tập">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:title="Từ vựng"
+                    android:id="@+id/nav_learn_vocabulary"
+                    android:icon="@drawable/ic_vocabulary"/>
+
+                <item android:title="Ngữ pháp"
+                    android:id="@+id/nav_grammar"
+                    android:icon="@drawable/ic_menu_book"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Kiểm tra">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:title="Listening"
+                    android:id="@+id/nav_listening"
+                    android:icon="@drawable/ic_hearing"/>
+
+                <item android:title="Reading"
+                    android:id="@+id/nav_reading"
+                    android:icon="@drawable/ic_library_books"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Tài khoản">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:title="Thông tin tài khoản"
+                    android:icon="@drawable/ic_person"
+                    android:id="@+id/nav_my_profile"/>
+
+                <item android:title="Đăng xuất"
+                    android:icon="@drawable/ic_logout"
+                    android:id="@+id/nav_logout"/>
+            </group>
+        </menu>
+    </item>
+
+</menu>

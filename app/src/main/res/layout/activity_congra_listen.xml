@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#57F667"
+    tools:context=".listening.Congra_listen"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgtrophy"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_trophy"
+        android:layout_centerHorizontal="true"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/txtcongrats"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Congratulaton!"
+        android:fontFamily="@font/fredokaoneregular"
+        android:textSize="45sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imgtrophy"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textquestioncount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/fredokaoneregular"
+        android:text="CORRECT ANSWERS"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_below="@id/txtcongrats" />
+
+    <TextView
+        android:id="@+id/txtQuestiontrue"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fredokaoneregular"
+        android:text="6/6"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textquestioncount"/>
+
+
+    <TextView
+        android:id="@+id/tvRP"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/fredokaoneregular"
+        android:text="Reward Points"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:layout_below="@id/txtQuestiontrue"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_dollar"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/fredokaoneregular"
+        android:text="500"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvRP" />
+
+    <TextView
+        android:id="@+id/tvFinaltext"
+        android:layout_marginTop="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perfect Attemp!!"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@id/tvPoints"
+        android:fontFamily="@font/fredokaoneregular"
+        android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:backgroundTint="#030E6E"
+        android:fontFamily="@font/fredokaoneregular"
+        android:layout_below="@id/tvFinaltext"
+        android:layout_centerHorizontal="true"/>
+</LinearLayout>

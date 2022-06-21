@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="15dp"
+    android:id="@+id/cardViewRanking"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvhotenrank"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/bungee"
+            android:text="Name"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/tvpointrank"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="25dp"
+
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="31dp"
+            android:layout_toStartOf="@+id/imagerank"
+            android:layout_toLeftOf="@+id/imagerank"
+            android:fontFamily="@font/bungee"
+            android:gravity="center"
+            android:text="10"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imagerank"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_rank" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

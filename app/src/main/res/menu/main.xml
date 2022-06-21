@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_intro"
+        android:title="@string/gi_i_thi_u"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_huong_dan"
+
+        android:title="@string/h_ng_d_n"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/c_i_t"
+        app:showAsAction="never"
+        />
+</menu>

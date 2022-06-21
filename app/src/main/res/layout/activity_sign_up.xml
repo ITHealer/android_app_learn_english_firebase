@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layoutDescription="@xml/login_motion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account.SignInActivity">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="130dp"
+        android:scaleType="centerInside"
+        android:layout_height="130dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/icon_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/img_logoRays"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/icon_login2"
+        android:rotation="180"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_cloudLeft"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerInside"
+        android:translationX="-20dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/cloud"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/lightGrey" />
+
+    <ImageView
+        android:id="@+id/imageView_cloudRight"
+        android:layout_marginTop="100dp"
+        android:translationX="20dp"
+        android:scaleType="centerInside"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/cloud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/lightGrey" />
+
+    <LinearLayout
+        android:layout_marginTop="-40dp"
+        android:id="@+id/linearlayout_inputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:alpha="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_cloudRight">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Đăng Ký Tài Khoản"
+            android:textColor="@color/textHeadline"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/login_edittext_bg"
+            android:drawableStart="@drawable/ic_person"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="16dp"
+            android:hint="Họ và tên"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:padding="16dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/login_edittext_bg"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="16dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:imeOptions="actionNext"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/login_edittext_bg"
+            android:drawableStart="@drawable/ic_baseline_phone_24"
+            android:drawableLeft="@drawable/ic_baseline_phone_24"
+            android:drawablePadding="16dp"
+            android:hint="Số điện thoại"
+            android:inputType="number"
+            android:padding="16dp"
+            android:imeOptions="actionNext"
+            android:textSize="14sp" />
+
+
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/login_edittext_bg"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="16dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:imeOptions="actionNext"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edt_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/login_edittext_bg"
+            android:drawableStart="@drawable/ic_baseline_lock_clock_24"
+            android:drawableLeft="@drawable/ic_baseline_lock_clock_24"
+            android:drawablePadding="16dp"
+            android:hint="Xác nhận lại Password"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:imeOptions="actionDone"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_button_bg"
+            android:backgroundTint="@color/colorGreen"
+            android:text="Đăng Ký"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/cPrimary" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_ref_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="@string/signup_register_button"
+        android:textColor="@color/textHeadline"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout_inputs" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

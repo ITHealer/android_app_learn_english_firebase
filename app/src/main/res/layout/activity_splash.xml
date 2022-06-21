@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layoutDescription="@xml/login_motion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account.SignInActivity">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="130dp"
+        android:scaleType="centerInside"
+        android:layout_height="130dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/icon_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+    <ImageView
+        android:id="@+id/img_logoRays"
+        android:layout_width="130dp"
+        android:scaleType="centerInside"
+        android:layout_height="130dp"
+        android:layout_marginTop="80dp"
+        android:rotation="0"
+        android:background="@drawable/icon_login2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_cloudLeft"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/cloud"
+        android:translationX="-20dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/lightGrey" />
+
+    <ImageView
+        android:id="@+id/img_cloudRight"
+        android:layout_marginTop="120dp"
+        android:scaleType="centerInside"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/cloud"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/lightGrey"/>
+
+    <LinearLayout
+        android:alpha="0"
+        android:id="@+id/linearlayout_inputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_cloudRight">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Ứng dụng học ngôn ngữ"
+            android:textColor="@color/textHeadline"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Sign in to continue"
+            android:textColor="@color/textDescription"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_edittext_bg"
+            android:drawableStart="@drawable/ic_person"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="16dp"
+            android:hint="Username"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            android:maxLength="100"
+            android:padding="16dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_edittext_bg"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawableEnd="@drawable/ic_visibility"
+            android:drawableRight="@drawable/ic_visibility"
+            android:drawablePadding="16dp"
+            android:hint="Password"
+            android:maxLength="100"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"
+            android:padding="16dp"
+            android:textSize="14sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_button_bg"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Login"
+            android:textColor="@color/white"
+            app:backgroundTint="#FFB20C" />
+
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/tv_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:alpha="0"
+        android:layout_marginRight="30dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/textDescription"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearlayout_inputs" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_register_button"
+        android:textColor="@color/textHeadline"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

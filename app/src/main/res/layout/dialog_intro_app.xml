@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_them"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giới thiệu"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#ff00"
+        android:gravity="center"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/edit_tencv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_them"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:gravity="left"
+        android:text="Xây dựng một ứng dụng được sử dụng rộng rãi và phù hợp với mọi lứa tuổi, cung cấp các chức năng cơ bản như học từ vựng, ngữ pháp tiếng anh, ôn luyện trắc nghiệm, đọc hiểu, luyện nghe. Người dùng có thể sử dụng bằng cách đăng ký hoàn toàn miễn phí. Có tài khoản sẽ giúp người dùng có thể tích lũy điểm và lợi ích riêng của thành viên. Ứng dụng dành cho những ai muốn cải thiện về vốn từ vựng của mình, làm quen với các câu trắc nghiệm trong đề thi, phát triển kỹ năng đọc hiểu tốt hơn, luyện nghe theo các dạng đề thịnh hành."
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_huy"
+        android:text="Thoát"
+        android:layout_below="@+id/edit_tencv"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="10dp"/>
+
+
+</RelativeLayout>

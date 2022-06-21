@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.toeicexamapplication.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <activity
+        android:id="@+id/nav_learn_vocabulary"
+        android:label="@string/menu_vocabulary"
+        android:name="com.example.toeicexamapplication.vocabulary.VocabularyActivity"
+        tools:layout="@layout/activity_vocabulary" />
+
+    <activity
+        android:id="@+id/nav_grammar"
+        android:label="@string/menu_grammar"
+        android:name="com.example.toeicexamapplication.grammar.GrammarActivity"
+        tools:layout="@layout/activity_grammar" />
+
+    <activity
+        android:id="@+id/nav_listening"
+        android:label="@string/menu_listening"
+        android:name="com.example.toeicexamapplication.listening.ListeningActivity"
+        tools:layout="@layout/activity_listening" />
+
+    <activity
+        android:id="@+id/nav_reading"
+        android:label="@string/menu_reading"
+        android:name="com.example.toeicexamapplication.reading.ReadingActivity"
+        tools:layout="@layout/activity_reading" />
+
+    <activity
+        android:id="@+id/nav_my_profile"
+        android:label="@string/menu_my_profile"
+        android:name="com.example.toeicexamapplication.account.MyProfileActivity"
+        tools:layout="@layout/activity_my_profile"/>
+
+
+</navigation>

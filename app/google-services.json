@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "755832764581",
+    "project_id": "learningenglishproject-a5bc5",
+    "storage_bucket": "learningenglishproject-a5bc5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755832764581:android:6e745d43824df6db42754c",
+        "android_client_info": {
+          "package_name": "com.example.toeicexamapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755832764581-5ao4ja1fq7j3lrdmr711tq3o2eods91d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.toeicexamapplication",
+            "certificate_hash": "a3474d07b28de64fa40e78d0c1b6aa6a842ca75d"
+          }
+        },
+        {
+          "client_id": "755832764581-43b0u1j8h2q8tpgmffedogdbe60ru9od.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB48ACVFJvfw9J12QuSmUjAkV6DxtjT4Pw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "755832764581-43b0u1j8h2q8tpgmffedogdbe60ru9od.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="584dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/color_white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tV_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="6dp"
+            android:text="Beautiful"
+            android:textAlignment="center"
+            android:textColor="@color/shadow_color"
+            android:textSize="70sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tV_pronun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="6dp"
+            android:text="pronunciation"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tV_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="6dp"
+            android:text="type"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlue"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tV_mean"
+            android:layout_width="400dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="6dp"
+            android:text="mean"
+            android:textAlignment="center"
+            android:textColor="@color/shadow_color"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tV_remember"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="6dp"
+            android:text="Remembered !"
+            android:textAlignment="center"
+            android:textColor="@color/colorGreen"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_remember"
+            android:layout_width="66dp"
+            android:layout_height="61dp"
+            android:layout_marginBottom="100dp"
+            app:srcCompat="@drawable/img"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

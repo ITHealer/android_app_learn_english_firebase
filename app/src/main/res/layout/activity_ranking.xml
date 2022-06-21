@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account.RankingActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imagerank1"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:paddingTop="40dp"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginBottom="92dp"
+        android:src="@drawable/icon_gold_medal"
+        app:layout_constraintBottom_toTopOf="@+id/userranklist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+
+        android:id="@+id/imagerank2"
+        android:paddingTop="55dp"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="92dp"
+        android:src="@drawable/icon_silver_medal"
+        app:layout_constraintBottom_toTopOf="@+id/userranklist"
+        app:layout_constraintEnd_toStartOf="@+id/imagerank1"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvpointrank3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/bungee"
+        android:gravity="center"
+        android:text="100"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/userranklist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagerank3"
+        app:layout_constraintVertical_bias="0.175" />
+
+    <TextView
+        android:id="@+id/tvpointrank2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/bungee"
+        android:gravity="center"
+        android:text="100"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/userranklist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagerank2"
+        app:layout_constraintVertical_bias="0.195" />
+
+    <TextView
+        android:id="@+id/tvpointrank1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="100"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/userranklist"
+        app:layout_constraintEnd_toStartOf="@+id/tvpointrank3"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toEndOf="@+id/tvpointrank2"
+        app:layout_constraintTop_toBottomOf="@+id/imagerank1"
+        app:layout_constraintVertical_bias="0.175" />
+
+    <ImageView
+        android:id="@+id/imagerank3"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:paddingTop="55dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="92dp"
+        android:src="@drawable/icon_bronze_medal"
+        app:layout_constraintBottom_toTopOf="@+id/userranklist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.621"
+        app:layout_constraintStart_toEndOf="@+id/imagerank1" />
+
+    <TextView
+        android:id="@+id/textViewRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/fredokaoneregular"
+        android:text="Ranking board"
+        android:textColor="@color/cPrimary"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/userranklist"
+        android:layout_width="match_parent"
+        android:layout_height="482dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
