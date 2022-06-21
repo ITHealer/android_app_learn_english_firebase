@@ -124,7 +124,7 @@
 
     <ListView
         android:id="@+id/lvluyennghe"
-        android:layout_width="399dp"
+        android:layout_width="400dp"
         android:layout_height="550dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
